@@ -38,9 +38,7 @@ searchForm.addEventListener('submit', e => {
         </video>`;
       } else if (image.includes('v.redd')) {
         media_html = `<video  controls muted preload="auto" autoplay="autoplay" loop="loop" style="width: 100%;">
-          <source src=${
-            post.media.reddit_video.scrubber_media_url
-          } type="video/webm"></source>
+          <source src=${post.url}/DASH_240 type="video/webm"></source>
         </video>`;
       } else if (image.includes('https://imgur')) {
         let img_url = post.url;
